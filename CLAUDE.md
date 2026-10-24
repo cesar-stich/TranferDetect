@@ -28,6 +28,12 @@ Se lee por la API REST con `SUPABASE_URL` y `SUPABASE_KEY` (clave pública, solo
 
 Con las operaciones de enero a mayo de 2026 y sus reclamos confirmados, dar un puntaje de sospecha a cada operación de junio de 2026. Solo se pueden revisar 300 operaciones de junio. El detalle está en `BASES.md`.
 
+## Lo que ella ya entendió del reto
+
+Sus apuntes, con las dudas ya resueltas, las decisiones pendientes y las preguntas que aún tiene abiertas, están en `CONTEXTO.md`. Úsalos para no repetir explicaciones y para retomar esas preguntas cuando toque; no des sus respuestas (regla 5).
+
+@CONTEXTO.md
+
 ## Entrega
 
 `predicciones.csv` con una fila por cada operación de junio:
