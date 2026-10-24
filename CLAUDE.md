@@ -13,6 +13,17 @@ Esta carpeta es un ejercicio de aprendizaje. La persona que trabaja contigo est�
 7. Guarda las gráficas como PNG en `graficas/` y el código por misión (`mision_1_explorar.py`, `mision_2_limpiar.py`, ...), con comentarios breves en español.
 8. Anota cada decisión y su motivo en `decisiones.md`.
 
+## Dónde están los datos
+
+Los datos viven solo en Supabase (proyecto TranferDetect, esquema `billetera`), no hay CSV locales. Léelos siempre con `datos.py`:
+
+```python
+from datos import cargar
+tx = cargar("transacciones")   # también "usuarios" y "fraudes_confirmados"
+```
+
+Se lee por la API REST con `SUPABASE_URL` y `SUPABASE_KEY` (clave pública, solo lectura) de `.env`. Las tablas están tal cual venían en los CSV, sin limpiar. Si el proyecto de Supabase está pausado, hay que reactivarlo desde el dashboard.
+
 ## El reto en una línea
 
 Con las operaciones de enero a mayo de 2026 y sus reclamos confirmados, dar un puntaje de sospecha a cada operación de junio de 2026. Solo se pueden revisar 300 operaciones de junio. El detalle está en `BASES.md`.

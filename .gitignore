@@ -16,3 +16,8 @@ venv/
 ~$*
 .DS_Store
 Thumbs.db
+
+# Datos: viven en Supabase (se leen con datos.py)
+/usuarios.csv
+/transacciones.csv
+/fraudes_confirmados.csv
